@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trips Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../CSS/cht.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="main-bg">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <i class="fa-solid fa-plane-departure"></i>
+        <div>
+          <span class="sidebar-title">CHT Travel</span>
+          <span class="sidebar-subtitle">Management System</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-plus"></i> New Booking</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-users"></i> Customers</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-gift"></i> Tour Packages</a>
+        <a class="sidebar-link active" href="#"><i class="fa-solid fa-location-dot"></i> Trips</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-hotel"></i> Hotels</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-car"></i> Transportation</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-credit-card"></i> Payments</a>
+      </nav>
+      <div class="sidebar-logout">
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="top-bar">
+        <div class="breadcrumb">
+          Dashboard <span class="breadcrumb-sep">&gt;</span> Trips
+        </div>
+        <button class="add-package-btn">
+          <i class="fa-solid fa-plus"></i> Add Package
+        </button>
+      </div>
+      <div class="page-header">
+        <div class="header-title">Trips</div>
+        <div class="header-desc">Manage your tour package offerings</div>
+      </div>
+
+      <div class="trips-grid">
+        <div class="trip-card">
+          <div class="trip-header">
+            <span>Beach Paradise</span>
+            <i class="fa-solid fa-location-dot trip-card-icon"></i>
+          </div>
+          <div class="trip-subtitle">Experience the pristine beaches and crystal-clear waters</div>
+          <div class="trip-price-row">
+            <span class="trip-price-label">$</span>
+            <span class="trip-price-main">₱25,000</span>
+          </div>
+          <div class="trip-inclusions-header">Inclusions:</div>
+          <ul class="trip-inclusions">
+            <li><i class="fa-solid fa-check"></i> Hotel Accommodation</li>
+            <li><i class="fa-solid fa-check"></i> Transportation</li>
+            <li><i class="fa-solid fa-check"></i> Island Tours</li>
+            <li><i class="fa-solid fa-check"></i> Meals</li>
+          </ul>
+          <div class="trip-actions">
+            <button class="trip-btn">Edit</button>
+            <button class="trip-btn outline">Delete</button>
+          </div>
+        </div>
+
+        <div class="trip-card">
+          <div class="trip-header">
+            <span>Island Adventure</span>
+            <i class="fa-solid fa-location-dot trip-card-icon"></i>
+          </div>
+          <div class="trip-subtitle">Explore stunning islands and hidden lagoons</div>
+          <div class="trip-price-row">
+            <span class="trip-price-label">$</span>
+            <span class="trip-price-main">₱35,000</span>
+          </div>
+          <div class="trip-inclusions-header">Inclusions:</div>
+          <ul class="trip-inclusions">
+            <li><i class="fa-solid fa-check"></i> Hotel Accommodation</li>
+            <li><i class="fa-solid fa-check"></i> Transportation</li>
+            <li><i class="fa-solid fa-check"></i> Island Hopping</li>
+            <li><i class="fa-solid fa-check"></i> Tour Guide</li>
+            <li><i class="fa-solid fa-check"></i> Meals</li>
+          </ul>
+          <div class="trip-actions">
+            <button class="trip-btn">Edit</button>
+            <button class="trip-btn outline">Delete</button>
+          </div>
+        </div>
+
+        <div class="trip-card">
+          <div class="trip-header">
+            <span>Mountain Escape</span>
+            <i class="fa-solid fa-location-dot trip-card-icon"></i>
+          </div>
+          <div class="trip-subtitle">Breathe fresh air and enjoy scenic mountain views</div>
+          <div class="trip-price-row">
+            <span class="trip-price-label">$</span>
+            <span class="trip-price-main">₱18,000</span>
+          </div>
+          <div class="trip-inclusions-header">Inclusions:</div>
+          <ul class="trip-inclusions">
+            <li><i class="fa-solid fa-check"></i> Hotel Accommodation</li>
+            <li><i class="fa-solid fa-check"></i> Transportation</li>
+            <li><i class="fa-solid fa-check"></i> City Tours</li>
+          </ul>
+          <div class="trip-actions">
+            <button class="trip-btn">Edit</button>
+            <button class="trip-btn outline">Delete</button>
+          </div>
+        </div>
+
+        <div class="trip-card">
+          <div class="trip-header">
+            <span>Surf &amp; Chill</span>
+            <i class="fa-solid fa-location-dot trip-card-icon"></i>
+          </div>
+          <div class="trip-subtitle">Catch waves and relax on beautiful beaches</div>
+          <div class="trip-price-row">
+            <span class="trip-price-label">$</span>
+            <span class="trip-price-main">₱28,000</span>
+          </div>
+          <div class="trip-inclusions-header">Inclusions:</div>
+          <ul class="trip-inclusions">
+            <li><i class="fa-solid fa-check"></i> Hotel Accommodation</li>
+            <li><i class="fa-solid fa-check"></i> Transportation</li>
+            <li><i class="fa-solid fa-check"></i> Surf Lessons</li>
+            <li><i class="fa-solid fa-check"></i> Equipment Rental</li>
+          </ul>
+          <div class="trip-actions">
+            <button class="trip-btn">Edit</button>
+            <button class="trip-btn outline">Delete</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

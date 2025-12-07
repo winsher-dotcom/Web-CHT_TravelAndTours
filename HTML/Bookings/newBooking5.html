@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CHT Travel Management Dashboard - Transportation</title>
+  <link rel="stylesheet" href="../CSS/booking.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        <div class="sidebar-title">
+          <span>CHT Travel</span>
+          <small>Management System</small>
+        </div>
+      </div>
+      <ul class="sidebar-menu">
+        <li><i class="fa-solid fa-table-columns"></i> Dashboard</li>
+        <li class="active"><i class="fa-solid fa-calendar-plus"></i> New Booking</li>
+        <li><i class="fa-solid fa-users"></i> Customers</li>
+        <li><i class="fa-solid fa-suitcase-rolling"></i> Tour Packages</li>
+        <li><i class="fa-solid fa-map-location-dot"></i> Trips</li>
+        <li><i class="fa-solid fa-hotel"></i> Hotels</li>
+        <li><i class="fa-solid fa-shuttle-van"></i> Transportation</li>
+        <li><i class="fa-solid fa-credit-card"></i> Payments</li>
+      </ul>
+      <div class="sidebar-footer">
+        <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="breadcrumb">
+        Dashboard <i class="fa-solid fa-angle-right"></i> New Booking
+      </div>
+      <h2 class="page-title">Create New Booking</h2>
+      <p class="page-subtitle">
+        Follow the steps below to create a complete booking for your customer
+      </p>
+      <div class="info-banner">
+        <b>Use this wizard while interviewing your guest.</b> Each step is designed to guide you through collecting the necessary information for a complete booking. Your progress is auto-saved.
+      </div>
+      <!-- Steps -->
+      <div class="steps">
+        <div class="step step-completed">
+          <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+          <span>Customer Info</span>
+        </div>
+        <div class="step step-completed">
+          <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+          <span>Package Selection</span>
+        </div>
+        <div class="step step-completed">
+          <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+          <span>Customization</span>
+        </div>
+        <div class="step step-completed">
+          <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+          <span>Hotel Selection</span>
+        </div>
+        <div class="step step-active">
+          <div class="step-circle">5</div>
+          <span>Transportation</span>
+        </div>
+        <div class="step">
+          <div class="step-circle">6</div>
+          <span>Payment & Confirm</span>
+        </div>
+      </div>
+      <div class="main-flex">
+        <!-- Transportation Section -->
+        <section class="transportation-card">
+          <h3>Select Transportation</h3>
+          <p class="subtitle">
+            Choose a vehicle that fits your group size and preferences
+          </p>
+          <div class="transportation-search-bar">
+            <span class="results-status">Showing 5 vehicles</span>
+            <div class="vehicle-filter">
+              <button class="vehicle-type selected"><i class="fa-solid fa-bus"></i> All</button>
+              <button class="vehicle-type"><i class="fa-solid fa-car"></i> Car</button>
+              <button class="vehicle-type"><i class="fa-solid fa-truck-pickup"></i> SUV</button>
+              <button class="vehicle-type"><i class="fa-solid fa-bus"></i> Bus</button>
+            </div>
+          </div>
+          <div class="vehicle-grid">
+            <!-- Vehicle 1 -->
+            <div class="vehicle-box selected">
+              <div class="vehicle-header">
+                <span>
+                  <span class="vehicle-title">Toyota Hiace</span>
+                  <span class="vehicle-subtitle">ABC 1234</span>
+                </span>
+                <i class="fa-solid fa-shuttle-van"></i>
+              </div>
+              <div class="vehicle-detail-row">
+                <span class="vehicle-type-label">Van</span>
+                <span class="vehicle-seats">
+                  <i class="fa-solid fa-users"></i> Capacity: 12 passengers
+                </span>
+              </div>
+              <div class="vehicle-features">
+                <span class="feature">Air Conditioning</span>
+                <span class="feature">Luggage Space</span>
+              </div>
+              <div class="vehicle-info">
+                <span class="driver-label">Driver</span>
+                <span class="driver-info">Juan Dela Cruz <span>|</span> +63 912 345 6789</span>
+              </div>
+              <div class="vehicle-price-row">
+                <span class="rate-label">Daily rate</span>
+                <span class="vehicle-rate">₱5,000</span>
+              </div>
+              <button class="btn-select selected">Selected</button>
+            </div>
+            <!-- Vehicle 2 -->
+            <div class="vehicle-box">
+              <div class="vehicle-header">
+                <span>
+                  <span class="vehicle-title">Honda Civic</span>
+                  <span class="vehicle-subtitle">XYZ 5678</span>
+                </span>
+                <i class="fa-solid fa-car-side"></i>
+              </div>
+              <div class="vehicle-detail-row">
+                <span class="vehicle-type-label">Car</span>
+                <span class="vehicle-seats">
+                  <i class="fa-solid fa-users"></i> Capacity: 4 passengers
+                </span>
+              </div>
+              <div class="vehicle-features">
+                <span class="feature">Air Conditioning</span>
+                <span class="feature">GPS</span>
+              </div>
+              <div class="vehicle-info">
+                <span class="driver-label">Driver</span>
+                <span class="driver-info">Maria Santos <span>|</span> +63 923 456 7890</span>
+              </div>
+              <div class="vehicle-price-row">
+                <span class="rate-label">Daily rate</span>
+                <span class="vehicle-rate">₱4,000</span>
+              </div>
+              <button class="btn-select">Select Vehicle</button>
+            </div>
+            <!-- Vehicle 3 -->
+            <div class="vehicle-box">
+              <div class="vehicle-header">
+                <span>
+                  <span class="vehicle-title">Toyota Fortuner</span>
+                  <span class="vehicle-subtitle">JQL 7890</span>
+                </span>
+                <i class="fa-solid fa-truck-pickup"></i>
+              </div>
+              <div class="vehicle-detail-row">
+                <span class="vehicle-type-label">SUV</span>
+                <span class="vehicle-seats">
+                  <i class="fa-solid fa-users"></i> Capacity: 7 passengers
+                </span>
+              </div>
+              <div class="vehicle-features">
+                <span class="feature">Air Conditioning</span>
+                <span class="feature">Speakers</span>
+              </div>
+              <div class="vehicle-info">
+                <span class="driver-label">Driver</span>
+                <span class="driver-info">Dennis Mendoza <span>|</span> +63 919 234 5678</span>
+              </div>
+              <div class="vehicle-price-row">
+                <span class="rate-label">Daily rate</span>
+                <span class="vehicle-rate">₱3,500</span>
+              </div>
+              <button class="btn-select">Select Vehicle</button>
+            </div>
+            <!-- Vehicle 4 -->
+            <div class="vehicle-box">
+              <div class="vehicle-header">
+                <span>
+                  <span class="vehicle-title">Hino Tourist Bus</span>
+                  <span class="vehicle-subtitle">QEF 1012</span>
+                </span>
+                <i class="fa-solid fa-bus"></i>
+              </div>
+              <div class="vehicle-detail-row">
+                <span class="vehicle-type-label">Bus</span>
+                <span class="vehicle-seats">
+                  <i class="fa-solid fa-users"></i> Capacity: 45 passengers
+                </span>
+              </div>
+              <div class="vehicle-features">
+                <span class="feature">Air Conditioning</span>
+                <span class="feature">Entertainment System</span>
+              </div>
+              <div class="vehicle-info">
+                <span class="driver-label">Driver</span>
+                <span class="driver-info">Pedro Rodriguez <span>|</span> +63 911 876 0901</span>
+              </div>
+              <div class="vehicle-price-row">
+                <span class="rate-label">Daily rate</span>
+                <span class="vehicle-rate">₱8,000</span>
+              </div>
+              <button class="btn-select">Select Vehicle</button>
+            </div>
+            <!-- Vehicle 5 -->
+            <div class="vehicle-box">
+              <div class="vehicle-header">
+                <span>
+                  <span class="vehicle-title">Nissan Urban</span>
+                  <span class="vehicle-subtitle">GHJ 1345</span>
+                </span>
+                <i class="fa-solid fa-van-shuttle"></i>
+              </div>
+              <div class="vehicle-detail-row">
+                <span class="vehicle-type-label">Van</span>
+                <span class="vehicle-seats">
+                  <i class="fa-solid fa-users"></i> Capacity: 10 passengers
+                </span>
+              </div>
+              <div class="vehicle-features">
+                <span class="feature">Air Conditioning</span>
+                <span class="feature">Luggage Space</span>
+                <span class="feature">WiFi</span>
+              </div>
+              <div class="vehicle-info">
+                <span class="driver-label">Driver</span>
+                <span class="driver-info">Alex Garcia <span>|</span> +63 915 981 0112</span>
+              </div>
+              <div class="vehicle-price-row">
+                <span class="rate-label">Daily rate</span>
+                <span class="vehicle-rate">₱5,500</span>
+              </div>
+              <button class="btn-select">Select Vehicle</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-back"><i class="fa-solid fa-angle-left"></i> Back</button>
+            <span class="step-info">Step 5 of 6</span>
+            <button class="btn-next">Next <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </section>
+
+        <!-- Booking Summary -->
+        <aside class="booking-summary-card">
+          <h4>Booking Summary</h4>
+          <span class="progress-label">Live progress tracker</span>
+          <div class="progress-bar-background">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+          <span class="progress-percent">80% Complete</span>
+          <ul class="summary-list">
+            <li>
+              <i class="fa-solid fa-user"></i>
+              <span>
+                Customer <br>
+                <span class="mini">Jerico C. Capandan <br> Boracay</span>
+              </span>
+              <i class="fa-solid fa-circle-check checkmark"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-gift"></i>
+              <span>
+                Package <br>
+                <span class="mini">Island Adventure <br> <span class="mini2">6 inclusions</span></span>
+              </span>
+              <i class="fa-solid fa-circle-check checkmark"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-hotel"></i>
+              <span>
+                Hotel <br>
+                <span class="mini">Beach Resort Paradise</span>
+              </span>
+              <i class="fa-solid fa-circle-check checkmark"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-bus"></i>
+              <span>
+                Transport <br>
+                <span class="mini">Toyota Hiace</span>
+              </span>
+              <i class="fa-solid fa-circle-check checkmark"></i>
+            </li>
+          </ul>
+          <div class="total-cost">
+            <i class="fa-solid fa-dollar-sign"></i> Total Cost
+            <span class="total-amount">₱112,494,654,200</span>
+          </div>
+          <div class="completion-row">
+            <span>Completion</span>
+            <span>4 / 4</span>
+          </div>
+          <div class="progress-bar-background small">
+            <div class="progress-bar small" style="width: 100%"></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Records Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../CSS/cht.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="main-bg">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <i class="fa-solid fa-plane-departure"></i>
+        <div>
+          <span class="sidebar-title">CHT Travel</span>
+          <span class="sidebar-subtitle">Management System</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-plus"></i> New Booking</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-users"></i> Customers</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-gift"></i> Tour Packages</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-suitcase-rolling"></i> Trips</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-hotel"></i> Hotels</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-car"></i> Transportation</a>
+        <a class="sidebar-link active" href="#"><i class="fa-solid fa-credit-card"></i> Payments</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-chart-pie"></i> Reports</a>
+      </nav>
+      <div class="sidebar-logout">
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="top-bar">
+        <div class="breadcrumb">
+          Dashboard <span class="breadcrumb-sep">&gt;</span> Payment
+        </div>
+        <button class="add-package-btn">
+          <i class="fa-solid fa-plus"></i> Add Package
+        </button>
+      </div>
+      <div class="page-header">
+        <div class="header-title">Payment Records</div>
+        <div class="header-desc">Manage your Payment Records</div>
+      </div>
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="card-label">Total Revenue</div>
+          <div class="card-value-row">
+            <div class="card-value">$9,850</div>
+            <div class="card-icon success"><i class="fa-solid fa-dollar-sign"></i></div>
+          </div>
+          <div class="card-increase">+12.5%</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Completed</div>
+          <div class="card-value-row">
+            <div class="card-value">$7,350</div>
+            <div class="card-icon completed"><i class="fa-solid fa-dollar-sign"></i></div>
+          </div>
+          <div class="card-link"><a href="#">4 payments</a></div>
+        </div>
+        <div class="card">
+          <div class="card-label">Pending</div>
+          <div class="card-value-row">
+            <div class="card-value">$2,100</div>
+            <div class="card-icon pending"><i class="fa-solid fa-dollar-sign"></i></div>
+          </div>
+          <div class="card-link"><a href="#" class="pending-link">1 payment</a></div>
+        </div>
+        <div class="card">
+          <div class="card-label">Failed</div>
+          <div class="card-value-row">
+            <div class="card-value">$1,500</div>
+            <div class="card-icon failed"><i class="fa-solid fa-dollar-sign"></i></div>
+          </div>
+          <div class="card-link"><a href="#" class="failed-link">1 payment</a></div>
+        </div>
+      </div>
+      <div class="search-bar">
+        <div class="search-input-group">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" placeholder="Search payments..." />
+        </div>
+        <input class="short-input" type="text" placeholder="">
+        <input class="short-input" type="text" placeholder="">
+        <button class="filter-btn"><i class="fa-solid fa-filter"></i> Filter Date</button>
+      </div>
+      <div class="table-wrapper">
+        <table class="payments-table">
+          <thead>
+            <tr>
+              <th>Transaction ID</th>
+              <th>Customer</th>
+              <th>Booking Ref</th>
+              <th>Amount</th>
+              <th>Payment Method</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">TXN001234</a></td>
+              <td>John Anderson</td>
+              <td>BK-2024-001</td>
+              <td>$1250.00</td>
+              <td>Credit Card</td>
+              <td>2024-12-01</td>
+              <td><span class="status completed">Completed</span></td>
+              <td>
+                <a href="#" title="Download"><i class="fa-solid fa-download"></i></a>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#">TXN001235</a></td>
+              <td>Sarah Williams</td>
+              <td>BK-2024-002</td>
+              <td>$850.00</td>
+              <td>PayPal</td>
+              <td>2024-12-02</td>
+              <td><span class="status completed">Completed</span></td>
+              <td>
+                <a href="#" title="Download"><i class="fa-solid fa-download"></i></a>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#">TXN001236</a></td>
+              <td>Michael Brown</td>
+              <td>BK-2024-003</td>
+              <td>$2100.00</td>
+              <td>Bank Transfer</td>
+              <td>2024-12-03</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>
+                <a href="#" title="Download"><i class="fa-solid fa-download"></i></a>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#">TXN001237</a></td>
+              <td>Emily Davis</td>
+              <td>BK-2024-004</td>
+              <td>$950.00</td>
+              <td>Credit Card</td>
+              <td>2024-12-04</td>
+              <td><span class="status completed">Completed</span></td>
+              <td>
+                <a href="#" title="Download"><i class="fa-solid fa-download"></i></a>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#">TXN001238</a></td>
+              <td>David Martinez</td>
+              <td>BK-2024-005</td>
+              <td>$1500.00</td>
+              <td>Debit Card</td>
+              <td>2024-12-05</td>
+              <td><span class="status failed">Failed</span></td>
+              <td>
+                <a href="#" title="Download"><i class="fa-solid fa-download"></i></a>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#">TXN001239</a></td>
+              <td>Lisa Johnson</td>
+              <td>BK-2024-006</td>
+              <td>$3200.00</td>
+              <td>Credit Card</td>
+              <td>2024-12-06</td>
+              <td><span class="status completed">Completed</span></td>
+              <td>
+                <a href="#" title="Download"><i class="fa-solid fa-download"></i></a>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination-info">
+        Showing 1 to 6 of 6 entries
+      </div>
+      <div class="pagination">
+        <button class="page-btn" disabled>Previous</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Next</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

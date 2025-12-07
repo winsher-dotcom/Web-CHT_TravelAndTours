@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CHT Travel Management Dashboard - Hotel Selection</title>
+  <link rel="stylesheet" href="../CSS/booking.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        <div class="sidebar-title">
+          <span>CHT Travel</span>
+          <small>Management System</small>
+        </div>
+      </div>
+      <ul class="sidebar-menu">
+        <li><i class="fa-solid fa-table-columns"></i> Dashboard</li>
+        <li class="active"><i class="fa-solid fa-calendar-plus"></i> New Booking</li>
+        <li><i class="fa-solid fa-users"></i> Customers</li>
+        <li><i class="fa-solid fa-suitcase-rolling"></i> Tour Packages</li>
+        <li><i class="fa-solid fa-map-location-dot"></i> Trips</li>
+        <li><i class="fa-solid fa-hotel"></i> Hotels</li>
+        <li><i class="fa-solid fa-shuttle-van"></i> Transportation</li>
+        <li><i class="fa-solid fa-credit-card"></i> Payments</li>
+      </ul>
+      <div class="sidebar-footer">
+        <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="breadcrumb">
+        Dashboard <i class="fa-solid fa-angle-right"></i> New Booking
+      </div>
+      <h2 class="page-title">Create New Booking</h2>
+      <p class="page-subtitle">
+        Follow the steps below to create a complete booking for your customer
+      </p>
+      <div class="info-banner">
+        <b>Use this wizard while interviewing your guest.</b> Each step is designed to guide you through collecting the necessary information for a complete booking. Your progress is auto-saved.
+      </div>
+      <!-- Steps -->
+      <div class="steps">
+        <div class="step step-completed">
+          <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+          <span>Customer Info</span>
+        </div>
+        <div class="step step-completed">
+          <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+          <span>Package Selection</span>
+        </div>
+        <div class="step step-completed">
+          <div class="step-circle"><i class="fa-solid fa-check"></i></div>
+          <span>Customization</span>
+        </div>
+        <div class="step step-active">
+          <div class="step-circle">4</div>
+          <span>Hotel Selection</span>
+        </div>
+        <div class="step">
+          <div class="step-circle">5</div>
+          <span>Transportation</span>
+        </div>
+        <div class="step">
+          <div class="step-circle">6</div>
+          <span>Payment & Confirm</span>
+        </div>
+      </div>
+      <div class="main-flex">
+        <!-- Hotel Selection Section -->
+        <section class="hotel-card">
+          <h3>Select Hotel</h3>
+          <p class="subtitle">Choose accommodation based on your customer's destination</p>
+          <div class="hotel-search-bar">
+            <div>
+              <label>Select Location</label>
+              <select>
+                <option>Boracay</option>
+              </select>
+              <div class="info-subtext">Showing 3 hotels available in Boracay</div>
+            </div>
+            <div>
+              <label>Travel Dates</label>
+              <span class="dates">11/11/11111 - 11/10/11111</span>
+            </div>
+            <div>
+              <label>Duration</label>
+              <span class="dates">Not set</span>
+            </div>
+          </div>
+          <div class="hotel-grid">
+            <!-- Hotel 1 -->
+            <div class="hotel-box">
+              <div class="hotel-header">
+                <span>
+                  <span class="hotel-title">Beach Resort Paradise</span>
+                  <span class="hotel-location"><i class="fa-solid fa-location-dot"></i> Station 1, Boracay</span>
+                </span>
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <div class="hotel-rating">
+                <span class="stars">★ 4.8</span>
+              </div>
+              <div class="hotel-amenities">
+                <span class="amenity">Beachfront</span>
+                <span class="amenity">Pool</span>
+                <span class="amenity">Restaurant</span>
+                <span class="amenity">WiFi</span>
+              </div>
+              <div class="hotel-price">
+                Rate per night <span class="price">₱3,500</span>
+              </div>
+              <button class="btn-secondary select">Select Hotel</button>
+            </div>
+            <!-- Hotel 2 -->
+            <div class="hotel-box">
+              <div class="hotel-header">
+                <span>
+                  <span class="hotel-title">Sunset Bay Hotel</span>
+                  <span class="hotel-location"><i class="fa-solid fa-location-dot"></i> Station 2, Boracay</span>
+                </span>
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <div class="hotel-rating">
+                <span class="stars">★ 4.5</span>
+              </div>
+              <div class="hotel-amenities">
+                <span class="amenity">Pool</span>
+                <span class="amenity">Restaurant</span>
+                <span class="amenity">WiFi</span>
+                <span class="amenity">Spa</span>
+              </div>
+              <div class="hotel-price">
+                Rate per night <span class="price">₱2,800</span>
+              </div>
+              <button class="btn-secondary select">Select Hotel</button>
+            </div>
+            <!-- Hotel 3 -->
+            <div class="hotel-box">
+              <div class="hotel-header">
+                <span>
+                  <span class="hotel-title">White Sands Inn</span>
+                  <span class="hotel-location"><i class="fa-solid fa-location-dot"></i> Station 3, Boracay</span>
+                </span>
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <div class="hotel-rating">
+                <span class="stars">★ 4.3</span>
+              </div>
+              <div class="hotel-amenities">
+                <span class="amenity">WiFi</span>
+                <span class="amenity">Restaurant</span>
+                <span class="amenity">Beach Access</span>
+              </div>
+              <div class="hotel-price">
+                Rate per night <span class="price">₱2,200</span>
+              </div>
+              <button class="btn-secondary select">Select Hotel</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn-back"><i class="fa-solid fa-angle-left"></i> Back</button>
+            <span class="step-info">Step 4 of 6</span>
+            <button class="btn-next">Next <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </section>
+
+        <!-- Booking Summary -->
+        <aside class="booking-summary-card">
+          <h4>Booking Summary</h4>
+          <span class="progress-label">Live progress tracker</span>
+          <div class="progress-bar-background">
+            <div class="progress-bar" style="width: 50%"></div>
+          </div>
+          <span class="progress-percent">50% Complete</span>
+          <ul class="summary-list">
+            <li>
+              <i class="fa-solid fa-user"></i>
+              <span>
+                Customer <br>
+                <span class="mini">Jerico C. Capandan <br> Boracay</span>
+              </span>
+              <i class="fa-solid fa-circle-check checkmark"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-gift"></i>
+              <span>
+                Package <br>
+                <span class="mini">Island Adventure <br> <span class="mini2">6 inclusions</span></span>
+              </span>
+              <i class="fa-solid fa-circle-check checkmark"></i>
+            </li>
+            <li><i class="fa-solid fa-hotel"></i> Hotel</li>
+            <li><i class="fa-solid fa-bus"></i> Transport</li>
+          </ul>
+          <div class="total-cost">
+            <i class="fa-solid fa-dollar-sign"></i> Total Cost
+            <span class="total-amount">₱28,000</span>
+          </div>
+          <div class="completion-row">
+            <span>Completion</span>
+            <span>2 / 4</span>
+          </div>
+          <div class="progress-bar-background small">
+            <div class="progress-bar small" style="width: 50%"></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

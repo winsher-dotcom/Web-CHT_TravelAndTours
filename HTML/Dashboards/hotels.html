@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotels Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../CSS/cht.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="main-bg">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <i class="fa-solid fa-plane-departure"></i>
+        <div>
+          <span class="sidebar-title">CHT Travel</span>
+          <span class="sidebar-subtitle">Management System</span>
+        </div>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-plus"></i> New Booking</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-users"></i> Customers</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-gift"></i> Tour Packages</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-suitcase-rolling"></i> Trips</a>
+        <a class="sidebar-link active" href="#"><i class="fa-solid fa-hotel"></i> Hotels</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-car"></i> Transportation</a>
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-credit-card"></i> Payments</a>
+      </nav>
+      <div class="sidebar-logout">
+        <a class="sidebar-link" href="#"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="top-bar">
+        <div class="breadcrumb">
+          Dashboard <span class="breadcrumb-sep">&gt;</span> Hotels
+        </div>
+        <button class="add-package-btn">
+          <i class="fa-solid fa-plus"></i> Add Package
+        </button>
+      </div>
+      <div class="page-header">
+        <div class="header-title">Hotels</div>
+        <div class="header-desc">Manage your Hotels offerings</div>
+      </div>
+      <div class="search-bar">
+        <div class="search-input-group">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" placeholder="Search hotels..." />
+        </div>
+        <input class="short-input" type="text" placeholder="">
+        <input class="short-input" type="text" placeholder="">
+      </div>
+      <div class="table-wrapper">
+        <table class="hotels-table">
+          <thead>
+            <tr>
+              <th>Hotel</th>
+              <th>Location</th>
+              <th>Rating</th>
+              <th>Rooms</th>
+              <th>Price/Night</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="hotel-avatar"></span> Grand Plaza Hotel</td>
+              <td><i class="fa-solid fa-location-dot"></i> New York, USA</td>
+              <td><span class="star"><i class="fa-solid fa-star"></i></span> 4.8</td>
+              <td>150</td>
+              <td><span class="price">$25</span><br>0</td>
+              <td><span class="status active">Active</span></td>
+              <td>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="hotel-avatar"></span> Ocean View Resort</td>
+              <td><i class="fa-solid fa-location-dot"></i> Miami, USA</td>
+              <td><span class="star"><i class="fa-solid fa-star"></i></span> 4.6</td>
+              <td>200</td>
+              <td><span class="price">$18</span><br>0</td>
+              <td><span class="status active">Active</span></td>
+              <td>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="hotel-avatar"></span> Mountain Lodge</td>
+              <td><i class="fa-solid fa-location-dot"></i> Colorado, USA</td>
+              <td><span class="star"><i class="fa-solid fa-star"></i></span> 4.5</td>
+              <td>80</td>
+              <td><span class="price">$15</span><br>0</td>
+              <td><span class="status active">Active</span></td>
+              <td>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="hotel-avatar"></span> City Center Inn</td>
+              <td><i class="fa-solid fa-location-dot"></i> Chicago, USA</td>
+              <td><span class="star"><i class="fa-solid fa-star"></i></span> 4.3</td>
+              <td>120</td>
+              <td><span class="price">$12</span><br>0</td>
+              <td><span class="status active">Active</span></td>
+              <td>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="hotel-avatar"></span> Sunset Paradise</td>
+              <td><i class="fa-solid fa-location-dot"></i> Los Angeles, USA</td>
+              <td><span class="star"><i class="fa-solid fa-star"></i></span> 4.7</td>
+              <td>180</td>
+              <td><span class="price">$20</span><br>0</td>
+              <td><span class="status inactive">Inactive</span></td>
+              <td>
+                <a href="#" title="Edit"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#" title="Delete"><i class="fa-solid fa-trash-alt"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination-info">
+        Showing 1 to 5 of 5 entries
+      </div>
+      <div class="pagination">
+        <button class="page-btn" disabled>Previous</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Next</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
